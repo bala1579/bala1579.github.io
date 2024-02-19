@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiran Resume</title>
+    <style>
+        body{
+            background-color: wheat;
+            margin: 0;
+            padding: 0;
+            color: brown;
+
+        }
+        .main{
+             max-width: 700px;
+             
+            margin: 20px auto;
+            background-color: lightgreen;
+            position: relative;
+            border-radius: 20px;
+            border: 4px solid darkgreen;
+            padding: 30px;
+            
+        }
+        h1{
+            text-align: center;
+            font-style: italic;
+            color: green;
+            font-size: 50px;
+            
+        }
+        h3{
+            color: darkmagenta;
+        }
+
+        h2 {
+            display: inline;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            background-color: rgb(13, 13, 94);
+
+        }
+
+       nav  .right  ul{
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+        }
+      
+        
+        .left{
+            font-size: 1.2rem;
+        }
+       nav  .right ul li  a{
+            text-decoration: none;
+            font-size: 20px;
+            color: lightgreen;
+            padding: 15px 15px;
+            border-radius: 10px;
+            
+        }
+        nav .right ul li a:hover{
+            font-size: 20px;
+            background-color: aqua;
+            color: red;
+            
+            
+            
+        }
+        nav  .right ul li .active{
+            background-color: yellow;
+            color: black;
+            
+        }
+        .thanx{
+            height: 50px;
+            width: 200px;
+            text-align: center;
+            position: absolute;
+            bottom: 0px;
+            margin: auto;
+        }
+
+
+        @media only screen and (max-width: 400px)
+        {
+            .main{
+             max-width: 280px;
+             
+            margin: 20px auto;
+            background-color: lightgreen;
+            position: relative;
+            border-radius: 20px;
+            border: 4px solid darkgreen;
+            padding: 30px;
+            
+        }
+
+
+        nav  .right ul li  a{
+            text-decoration: none;
+            font-size: 0;
+            
+            padding: 0;
+            border-radius: 0;
+            
+        }
+
+        .left{
+            font-size: 0.6rem;
+        }
+
+        nav .openNav{
+                visibility: visible;
+            }
+
+            nav .right{
+                visibility: hidden;
+
+            }
+
+            nav .sidenav{
+                visibility: visible;
+            }
+
+
+        }
+
+
+
+        @media only screen and (min-width: 400px) and (max-width:600px)
+        {
+            nav .sidenav{
+                visibility: hidden;
+            }
+            nav .openNav{
+                visibility: hidden;
+            }
+
+            nav .left h2{
+                margin-left: 10px;
+
+            }
+
+
+        nav  .right ul li  a{
+            text-decoration: none;
+            font-size: 15px;
+            color: lightgreen;
+            padding: 10px 10px;
+            border-radius: 6px;
+            
+        }
+        nav .right ul li a:hover{
+            font-size: 15px;
+            background-color: aqua;
+            color: red;
+                    
+        }
+
+        .left h2{
+            font-size: 0.9rem;
+            text-align: center;
+            align-items: center;
+            
+        }
+        }
+
+        @media only screen and (min-width: 600px)
+        {
+            nav .openNav{
+                visibility: hidden;
+            }
+
+            nav .left h2{
+                margin-left: 10px;
+
+            }
+
+        }
+
+
+
+/*-----------------*/
+
+        
+     nav .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+    
+     nav .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    nav  .sidenav a:hover {
+      color: #f1f1f1;
+    }
+    
+    nav  .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+    @media screen and (max-height: 400px) {
+     nav .sidenav {padding-top: 15px;}
+       nav .sidenav a {font-size: 18px;}
+    }
+
+
+
+
+
+
+       
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"><h2><span class="k" style="color: red;">K</span> <span class="i" style="color: orange;">I</span><span class="r" style="color: yellow;">R</span><span class="a" style="color: green;">A</span><span class="n" style="color: blue;">N</span>&nbsp; &nbsp;<span class="b" style="color: skyblue;">B</span><span class="a" style="color: green;">A</span> <span="l" style="color: red">L</span><span class="a">A</span>&nbsp;&nbsp;<span class="p" style="color: aliceblue;">Portfolio</span></h2></div>
+            <div class="right">
+                <ul>
+                    <li ><a href="Home.html">Home</a></li>
+                    <li ><a  class="active" href="Resume.html">Resume</a></li>
+                    <li ><a href="quiz.html">Quiz</a></li>
+                    
+                 </ul>
+            </div>
+
+
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="Home.html">Home</a>
+                <a href="Resume.html">Resume</a>
+                <a href="quiz.html">Quiz</a>
+            
+              </div>
+                 <span  class ="openNav"  style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+        </nav>
+    </header>
+    
+    <div class="main">
+        <h1>Kiran Resume</h1>
+        <hr>
+
+        <h2>Qualification</h2>
+        <p><h3>12th Pass</h3>
+        <h3>Diploma in Computer Application</h3>
+        </p>
+        <hr>
+
+        <h2> IT Skills</h2>
+        <h3><ul>
+            <li>Html</li>
+            <li>Css</li>
+            <li>Bootstrap</li>
+            <li>Javascript</li>
+        </ul></h3>
+        <hr>
+
+        <h2>Certificates</h2>
+        <h3><ul>
+            <li><a href="html.pdf">Html</a></li>
+            <li><a href="css.pdf">Css</a></li>
+                 
+        </ul></h3>
+        <hr>
+
+
+        <h2>Experince</h2>
+        <h3>Fresher</h3>
+        <hr>
+
+        <h2>My Work</h2>
+        <h3>
+            <ul>
+                <li> <a href="quiz.html">Quiz</a></li>
+                <li ><a href="Resume.html">Resume</a></li>
+                
+            </ul>
+        </h3>
+        <hr>
+
+         <h2>Contact</h2>
+         <h3>Email:   &nbsp &nbsp &nbsp &nbsp &nbsp kiranofficialit@gmail.com </h3>
+         <h3>Contact :      &nbsp &nbsp  &nbsp  8988464959</h3>
+         <h3>Address :   &nbsp &nbsp &nbsp  &nbsp  Mohali</h3>
+         <hr>
+
+         <div class="thnax"><h1>Thanx</h1></div>
+         <p><h2 class="h2color" style="color: blue;">All Work Done by Me . I am Fresher in Web Devlopment .I Hope you like my work.</h2></p>
+
+    </div>
+    <script>
+        function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  /* Set the width of the side navigation to 0 */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+    </script>
+</body>
+</html>

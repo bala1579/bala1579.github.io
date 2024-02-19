@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="quiz.css">
+    
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"><span style="color: pink;" class="green">Kiran Bala</span> <span style="color: yellow;" class="yellow">Portfolio</span>  </div>
+            <div class="right">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Resume.html">Resume</a></li>
+                    <li class="active"><a href="quiz.html">Quiz</a></li>
+                    
+                    
+                   </ul>
+                
+            </div>
+        </nav>
+    </header>
+    <main>
+          <h1>HTML Quiz</h1>
+        <div class="main">
+
+            <div class="container" id="container1">
+                <span class="color">Q_No. 1</span>
+               <h2>How Many heading Tag in HTML.</h2>
+               <div class="options">
+                 <div class="option " onclick="checkAnswer('container1','6' ,'result1')">6</div>
+                 <div class="option " onclick="checkAnswer('container1','4' ,'result1')">4</div>
+                 <div class="option " onclick="checkAnswer('container1','5' ,'result1')">5</div>
+                 
+                </div>
+                <p id="result1"></p>
+               </div>       
+      
+  <div class="container" id="container2">
+                <span class="color">Q_No. 2</span>
+               <h2>Which one is Semantic Element</h2>
+               <div class="options">
+                 <div class="option " onclick="checkAnswer('container2','sect',   'result2')">sect element</div>
+                 <div class="option " onclick="checkAnswer('container2', 'section','result2')">section element</div>
+                 <div class="option " onclick="checkAnswer('container2', 'p',  'result2')">p element</div>
+                 
+                </div>
+                <p id="result2"></p>
+               </div>
+
+
+
+                     
+  <div class="container" id="container3">
+                <span class="color">Q_No. 3</span>
+               <h2>Which input type attribute allow email.</h2>
+               
+               <div class="options">
+                 <div class="option " onclick="checkAnswer('container3','submit' ,'result3')">input type="submit"</div>
+                 <div class="option " onclick="checkAnswer('container3', 'mail' ,'result3')">input type="mail"</div>
+                 <div class="option " onclick="checkAnswer('container3', 'email', 'result3')">input type="email"</div>
+                 
+                </div>
+                <p id="result3"></p>
+               </div>
+
+
+ <div class="container" id="container4">
+                <span class="color">Q_No. 4</span>
+               <h2>Which input type attribute allow password.</h2>
+               
+               <div class="options">
+                 <div class="option " onclick="checkAnswer('container4','submit','result4')">input type="submit"</div>
+                 <div class="option " onclick="checkAnswer('container4', 'password' ,'result4')">input type="password"</div>
+                 <div class="option " onclick="checkAnswer('container4', 'range','result4')">input type="range"</div>
+                 
+                </div>
+                <p id="result4"></p>
+               </div>
+
+
+               
+  <div class="container" id="container5">
+                <span class="color">Q_No. 5</span>
+               <h2>HTML Stands for</h2>
+               
+               <div class="options">
+                 <div class="option " onclick="checkAnswer('container5','Hyper text markup language','result5')">Hyper text markup language</div>
+                 <div class="option " onclick="checkAnswer('container5', 'Hyper text mark language','result5')">Hyper text mark language</div>
+                 <div class="option " onclick="checkAnswer('container5', 'Hyper taransform markup language','result5')">Hyper language</div>
+                 
+                </div>
+                <p id="result5"></p>
+               </div>
+
+
+                              
+  <div class="container" id="container6">
+    <span class="color">Q_No. 6</span>
+   <h2>Which element use to draw graphics in Html</h2>
+   
+   <div class="options">
+     <div class="option " onclick="checkAnswer('container6','canvas','result6')">canvas</div>
+     <div class="option " onclick="checkAnswer('container6', 'canva','result6')">canva</div>
+     <div class="option " onclick="checkAnswer('container6','draw','result6')">draw</div>
+     
+    </div>
+    <p id="result6"></p>
+   </div>
+
+
+
+   
+          
+                 </div>
+    </main>
+  
+
+<script>
+        function checkAnswer(questionId, selectedAnswer ,result) 
+        {
+            var correctAnswers = {
+                'container1': '6',
+                'container2': 'section',
+                'container3': 'email',
+                'container4': 'password',
+                'container5': 'Hyper text markup language',
+                'container6': 'canvas'
+                // Add correct answers for additional questions
+            };
+
+          //  var resultContainer = document.getElementById('result');
+            var resultContainer = document.getElementById(result);
+
+            var questionContainer = document.getElementById(questionId);
+            
+            
+              
+            if (correctAnswers[questionId] === selectedAnswer) {
+                
+                resultContainer.innerHTML = 'Correct!';
+                
+            
+               
+            } else {
+                resultContainer.innerHTML = 'Incorrect. Please try again.';
+                
+               
+            
+            }
+
+          }
+
+         
+
+
+
+        
+    </script>
+    
+</body>
+</html>
