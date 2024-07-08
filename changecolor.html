@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+    <style>
+        body {
+            background-color: bisque;
+        }
+        .container{
+            height: 100px;
+            width: 400px;
+            background-color: black;
+            margin: 250px auto;
+        }
+
+        .btn{
+            height: 40px;
+            width: 60px;
+            background-color: black;
+            border: 2px solid white;
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+            margin-left: 50px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body id="body">
+    <div class="container">
+        <button type="button" id="red" class="btn" onclick="document.getElementById('body').style.backgroundColor='red'">Red</button>
+        <button type="button" id="green" class="btn" onclick="document.getElementById('body').style.backgroundColor='green'">Green</button>
+        <button type="button" id="yellow" class="btn" onclick="document.getElementById('body').style.backgroundColor='yellow'">Yellow</button>
+        
+    </div>
+    
+</body>
+</html>
